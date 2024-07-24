@@ -1,6 +1,6 @@
 "use client";
 
-import { PageQuery } from "../tina/__generated__/types";
+import type { PageQuery } from "../tina/__generated__/types";
 import Image from "next/image";
 import { tinaField, useTina } from "tinacms/dist/react";
 
@@ -68,7 +68,7 @@ export function Page(props: {
               <h2
                 // @ts-ignore
                 data-tina-field={tinaField(link, "header")}
-                className={`mb-3 text-2xl font-semibold`}
+                className={"mb-3 text-2xl font-semibold"}
               >
                 {link?.header}{" "}
                 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -78,7 +78,7 @@ export function Page(props: {
               <p
                 // @ts-ignore
                 data-tina-field={tinaField(link, "description")}
-                className={`m-0 max-w-[30ch] text-sm opacity-50`}
+                className={"m-0 max-w-[30ch] text-sm opacity-50"}
               >
                 {link?.description}
               </p>
