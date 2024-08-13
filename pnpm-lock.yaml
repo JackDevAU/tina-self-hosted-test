@@ -12,8 +12,8 @@ importers:
         specifier: ^1.5.50
         version: 1.5.50(@babel/core@7.24.9)(@babel/template@7.24.7)(@codemirror/language@6.0.0)(@types/node@20.14.12)(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(scheduler@0.23.2)
       '@tinacms/datalayer':
-        specifier: ^1.2.38
-        version: 1.2.38(react@18.3.1)(typescript@5.5.4)
+        specifier: ^1.2.40
+        version: 1.2.40(react@18.3.1)(typescript@5.5.4)
       next:
         specifier: 14.0.3
         version: 14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -33,8 +33,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(next-auth@4.24.7(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tinacms@2.0.0(@babel/core@7.24.9)(@babel/template@7.24.7)(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(typescript@5.5.4))(yup@0.32.11)
       tinacms-gitprovider-github:
-        specifier: ^1.0.9
-        version: 1.0.9(@tinacms/datalayer@1.2.38(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13)
+        specifier: ^1.0.11
+        version: 1.0.11(@tinacms/datalayer@1.2.40(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -1366,14 +1366,20 @@ packages:
     resolution: {integrity: sha512-Dm12WlTAW9Ua5WGl9jgY2envLlBadxtAS1wJWjphW6CeWUQrhKQQDU8aAUoMmF2ldeQczk/J6EZ/BaWdH+rEnw==}
     hasBin: true
 
-  '@tinacms/datalayer@1.2.38':
-    resolution: {integrity: sha512-+L5DxLW59ia+i9jyDavSDnkfl6JLXHnfBk4FDS6vsEdvKJl+KnInC6FFlFrwAenfnMvFAeAdCpXiLwJVK7yO2A==}
+  '@tinacms/datalayer@1.2.40':
+    resolution: {integrity: sha512-m722Jq+2ZTLV86dQ/7p/iwYz7BHaVUfpRaD2YxgZ0Nci1sFbd6ELSyZTze74Ey/5owIJMr8qEvJpn5i6O33TWQ==}
 
   '@tinacms/graphql@1.4.38':
     resolution: {integrity: sha512-64VQ7jfrZT8R/fSH35mErf+P+VfUAv4TDih9nVIoti5szdTh6YPow4rek19NppnsFc4EKnJYL3m6+Nu9Gu5JqA==}
 
+  '@tinacms/graphql@1.4.40':
+    resolution: {integrity: sha512-u/ZYrn83IsggZLYFCvIt/uVdI5oHn2jHF3RyYZ3TfIc/L9X9h+A7Dm3HjRpZ+n3AvVw2LNSpyRltPXnGh96EAQ==}
+
   '@tinacms/mdx@1.3.28':
     resolution: {integrity: sha512-AZhkpnF95ZV7vQs5cenga01yqw/Vgo3Um7BeicrsHc61bfgN8Ap/o8iszvvtw/3r+rVjnKJQqMapE4oDfYjKpA==}
+
+  '@tinacms/mdx@1.3.29':
+    resolution: {integrity: sha512-xWvoLh9QMfh15+Fa1Eo8cnUn3ANARupgNiDwhCHcl/8VpcMtqocSNw6wn9v+19/9r5yfb7/kNeqbAR/D/OvHHw==}
 
   '@tinacms/metrics@1.0.5':
     resolution: {integrity: sha512-6kbhj5B0V7G5nRM4mj9BGh2++rI46bOe5VaGMoRMc/cpISfk933oTmQWwbFdLrQ0ZXsUSPmYC6Iun6SKvFKHtQ==}
@@ -1382,6 +1388,12 @@ packages:
 
   '@tinacms/schema-tools@1.4.19':
     resolution: {integrity: sha512-+ypLwGSCN302PlRyNmlc1onBpkeXUbkKHjvlZH+UGgAWxoyup0leiyz7bhSOGE08AzBw2uizJLY6p1GfGp4wVA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      yup: ^0.32.0
+
+  '@tinacms/schema-tools@1.5.0':
+    resolution: {integrity: sha512-O4cVAKVH5sLrvxGf7m8ufF1tubBvI18yyjMYmHMJ9Zva8Oj3POSHyBdkaNRp+rV1movA5AC9SQ4a5ryIMVzOfg==}
     peerDependencies:
       react: '>=16.14.0'
       yup: ^0.32.0
@@ -3525,6 +3537,9 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
+  lodash@4.17.20:
+    resolution: {integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==}
+
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
@@ -4880,10 +4895,10 @@ packages:
       react-dom: ^17.0.2 || ^18
       tinacms: 2.0.0
 
-  tinacms-gitprovider-github@1.0.9:
-    resolution: {integrity: sha512-VCnrtmSjoE+nexdooRAIWJfcQJJEYc/LXuL26OjlMdpAIcEad3eSpzeVsEdFWl6Lqnrl3/ESqM3QiZMConlSNA==}
+  tinacms-gitprovider-github@1.0.11:
+    resolution: {integrity: sha512-a0unwIj/t0tgifXNLpVIerpFTtxaypnHd7+R39+OnUwZCgegeXwnnRqQK+lNDi6zr+drIbWmT2LUNQqradOOrg==}
     peerDependencies:
-      '@tinacms/datalayer': 1.2.38
+      '@tinacms/datalayer': 1.2.40
 
   tinacms@2.0.0:
     resolution: {integrity: sha512-WYj7FDs0PQjRD8/x3H+8DNSV3JQlkdJ8Di+VQsauZfLloLaZzltzglJ50yLMmJBv36/4JXvZMn/QgyIBKeKweA==}
@@ -4997,8 +5012,8 @@ packages:
     peerDependencies:
       typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x
 
-  typescript@4.6.4:
-    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
+  typescript@4.7.4:
+    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
 
@@ -6904,9 +6919,9 @@ snapshots:
       - terser
       - ts-node
 
-  '@tinacms/datalayer@1.2.38(react@18.3.1)(typescript@5.5.4)':
+  '@tinacms/datalayer@1.2.40(react@18.3.1)(typescript@5.5.4)':
     dependencies:
-      '@tinacms/graphql': 1.4.38(react@18.3.1)(typescript@5.5.4)
+      '@tinacms/graphql': 1.4.40(react@18.3.1)(typescript@5.5.4)
     transitivePeerDependencies:
       - react
       - supports-color
@@ -6929,6 +6944,34 @@ snapshots:
       js-yaml: 3.14.1
       jsonpath-plus: 6.0.1
       lodash: 4.17.21
+      many-level: 2.0.0
+      micromatch: 4.0.5
+      normalize-path: 3.0.0
+      readable-stream: 4.5.2
+      scmp: 2.1.0
+      yup: 0.32.11
+    transitivePeerDependencies:
+      - react
+      - supports-color
+      - typescript
+
+  '@tinacms/graphql@1.4.40(react@18.3.1)(typescript@5.5.4)':
+    dependencies:
+      '@iarna/toml': 2.2.5
+      '@tinacms/mdx': 1.3.29(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.5.0(react@18.3.1)(yup@0.32.11)
+      abstract-level: 1.0.4
+      date-fns: 2.30.0
+      fast-glob: 3.3.2
+      fs-extra: 9.1.0
+      glob-parent: 6.0.2
+      graphql: 15.8.0
+      gray-matter: 4.0.3
+      isomorphic-git: 1.27.1
+      js-sha1: 0.6.0
+      js-yaml: 3.14.1
+      jsonpath-plus: 6.0.1
+      lodash: 4.17.20
       many-level: 2.0.0
       micromatch: 4.0.5
       normalize-path: 3.0.0
@@ -6978,6 +7021,44 @@ snapshots:
       - typescript
       - yup
 
+  '@tinacms/mdx@1.3.29(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)':
+    dependencies:
+      '@tinacms/schema-tools': 1.5.0(react@18.3.1)(yup@0.32.11)
+      acorn: 8.8.2
+      ccount: 2.0.1
+      estree-util-is-identifier-name: 2.1.0
+      lodash-es: 4.17.21
+      mdast-util-compact: 4.1.1
+      mdast-util-directive: 2.2.4
+      mdast-util-from-markdown: 1.3.0
+      mdast-util-gfm: 2.0.2
+      mdast-util-mdx-jsx: 2.1.2
+      mdast-util-to-markdown: 1.5.0
+      micromark-extension-gfm: 2.0.3
+      micromark-factory-mdx-expression: 1.0.7
+      micromark-factory-space: 1.0.0
+      micromark-factory-whitespace: 1.0.0
+      micromark-util-character: 1.1.0
+      micromark-util-symbol: 1.0.1
+      micromark-util-types: 1.0.2
+      parse-entities: 4.0.1
+      prettier: 2.8.8
+      remark: 14.0.2
+      remark-gfm: 2.0.0
+      remark-mdx: 2.3.0
+      stringify-entities: 4.0.3
+      typedoc: 0.26.5(typescript@5.5.4)
+      unist-util-source: 4.0.2
+      unist-util-stringify-position: 3.0.3
+      unist-util-visit: 4.1.2
+      uvu: 0.5.6
+      vfile-message: 3.1.4
+    transitivePeerDependencies:
+      - react
+      - supports-color
+      - typescript
+      - yup
+
   '@tinacms/metrics@1.0.5(encoding@0.1.13)(fs-extra@9.1.0)':
     dependencies:
       fs-extra: 9.1.0
@@ -6986,6 +7067,14 @@ snapshots:
       - encoding
 
   '@tinacms/schema-tools@1.4.19(react@18.3.1)(yup@0.32.11)':
+    dependencies:
+      picomatch-browser: 2.2.6
+      react: 18.3.1
+      url-pattern: 1.0.3
+      yup: 0.32.11
+      zod: 3.23.8
+
+  '@tinacms/schema-tools@1.5.0(react@18.3.1)(yup@0.32.11)':
     dependencies:
       picomatch-browser: 2.2.6
       react: 18.3.1
@@ -10163,6 +10252,8 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
+  lodash@4.17.20: {}
+
   lodash@4.17.21: {}
 
   log4js@6.9.1:
@@ -11942,12 +12033,12 @@ snapshots:
     transitivePeerDependencies:
       - yup
 
-  tinacms-gitprovider-github@1.0.9(@tinacms/datalayer@1.2.38(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13):
+  tinacms-gitprovider-github@1.0.11(@tinacms/datalayer@1.2.40(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13):
     dependencies:
       '@octokit/rest': 19.0.13(encoding@0.1.13)
-      '@tinacms/datalayer': 1.2.38(react@18.3.1)(typescript@5.5.4)
+      '@tinacms/datalayer': 1.2.40(react@18.3.1)(typescript@5.5.4)
       js-base64: 3.7.7
-      typescript: 4.6.4
+      typescript: 4.7.4
     transitivePeerDependencies:
       - encoding
 
@@ -12129,7 +12220,7 @@ snapshots:
       typescript: 5.5.4
       yaml: 2.4.5
 
-  typescript@4.6.4: {}
+  typescript@4.7.4: {}
 
   typescript@5.5.4: {}
 
