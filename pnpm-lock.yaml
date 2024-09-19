@@ -12,8 +12,8 @@ importers:
         specifier: 0.0.0-20240919005914
         version: 0.0.0-20240919005914(@codemirror/language@6.0.0)(@types/node@20.14.12)(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(scheduler@0.23.2)
       '@tinacms/datalayer':
-        specifier: ^1.2.38
-        version: 1.2.38(react@18.3.1)(typescript@5.5.4)
+        specifier: ^1.3.2
+        version: 1.3.2(react@18.3.1)(typescript@5.5.4)
       next:
         specifier: 14.0.3
         version: 14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -31,10 +31,10 @@ importers:
         version: 0.0.0-20240919005914(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(typescript@5.5.4)
       tinacms-authjs:
         specifier: ^3.0.0
-        version: 3.0.0(next-auth@4.24.7(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tinacms@0.0.0-20240919005914(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(typescript@5.5.4))(yup@0.32.11)
+        version: 3.0.0(next-auth@4.24.7(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tinacms@0.0.0-20240919005914(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(typescript@5.5.4))(yup@1.4.0)
       tinacms-gitprovider-github:
-        specifier: ^1.0.9
-        version: 1.0.9(@tinacms/datalayer@1.2.38(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13)
+        specifier: ^2.0.2
+        version: 2.0.2(@tinacms/datalayer@1.3.2(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -1670,17 +1670,11 @@ packages:
     resolution: {integrity: sha512-SN0MoeYAv5mxkzkuR2GiJVI/7SfvSG4ks5WkcLHm4xGMg4ijHqh9pSKlPY4qhxlJ8oeLKscME8Dpwfpd0D87pA==}
     hasBin: true
 
-  '@tinacms/datalayer@1.2.38':
-    resolution: {integrity: sha512-+L5DxLW59ia+i9jyDavSDnkfl6JLXHnfBk4FDS6vsEdvKJl+KnInC6FFlFrwAenfnMvFAeAdCpXiLwJVK7yO2A==}
-
-  '@tinacms/graphql@1.4.38':
-    resolution: {integrity: sha512-64VQ7jfrZT8R/fSH35mErf+P+VfUAv4TDih9nVIoti5szdTh6YPow4rek19NppnsFc4EKnJYL3m6+Nu9Gu5JqA==}
+  '@tinacms/datalayer@1.3.2':
+    resolution: {integrity: sha512-sDSDLL3yuhmDeyVctG62gfgyZuZKdHwBku5PoCW9w6sB+U33rk819nJptyMk3NzP2+IpAv/Fkc3fjG9JIE67xg==}
 
   '@tinacms/graphql@1.5.2':
     resolution: {integrity: sha512-RmqkaTqqORC9t2ei9rP26fYh/wsum0cKQqmukMawqEQEo8ax8KCBs9ddJUPj6/sI+HybNWxM1BQkt2BPkYKMCA==}
-
-  '@tinacms/mdx@1.3.28':
-    resolution: {integrity: sha512-AZhkpnF95ZV7vQs5cenga01yqw/Vgo3Um7BeicrsHc61bfgN8Ap/o8iszvvtw/3r+rVjnKJQqMapE4oDfYjKpA==}
 
   '@tinacms/mdx@1.4.2':
     resolution: {integrity: sha512-UsJJNAD8uKtjtJV/hFeDwXRVHVd7PowcIV3dhq/fLDzXY3dvOJnRuIHpNX3IxanUApzHjX9kBVNp/UQBOjHhvA==}
@@ -5322,10 +5316,10 @@ packages:
       react-dom: ^17.0.2 || ^18
       tinacms: 2.0.0
 
-  tinacms-gitprovider-github@1.0.9:
-    resolution: {integrity: sha512-VCnrtmSjoE+nexdooRAIWJfcQJJEYc/LXuL26OjlMdpAIcEad3eSpzeVsEdFWl6Lqnrl3/ESqM3QiZMConlSNA==}
+  tinacms-gitprovider-github@2.0.2:
+    resolution: {integrity: sha512-SN8hyM3YM5zIqm1QwNu0PmAUVkT0Lj5NRKHsR/pYyvFBk/UzfX9QZCpX3/uITIEujX0O1AUvL2O/3UJNEaC9kQ==}
     peerDependencies:
-      '@tinacms/datalayer': 1.2.38
+      '@tinacms/datalayer': 1.3.2
 
   tinacms@0.0.0-20240919005914:
     resolution: {integrity: sha512-NMd9uc4WBz5eGyTp5Xvulynlsn77HQT+YLQWoJ5ZjRky/pTlnjNO18UzY08rtrznySnzRh9rFPtAmSewHbAEuw==}
@@ -5449,8 +5443,8 @@ packages:
     peerDependencies:
       typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x
 
-  typescript@4.6.4:
-    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
+  typescript@4.7.4:
+    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
 
@@ -7639,37 +7633,9 @@ snapshots:
       - terser
       - ts-node
 
-  '@tinacms/datalayer@1.2.38(react@18.3.1)(typescript@5.5.4)':
+  '@tinacms/datalayer@1.3.2(react@18.3.1)(typescript@5.5.4)':
     dependencies:
-      '@tinacms/graphql': 1.4.38(react@18.3.1)(typescript@5.5.4)
-    transitivePeerDependencies:
-      - react
-      - supports-color
-      - typescript
-
-  '@tinacms/graphql@1.4.38(react@18.3.1)(typescript@5.5.4)':
-    dependencies:
-      '@iarna/toml': 2.2.5
-      '@tinacms/mdx': 1.3.28(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)
-      '@tinacms/schema-tools': 1.4.19(react@18.3.1)(yup@0.32.11)
-      abstract-level: 1.0.4
-      date-fns: 2.30.0
-      fast-glob: 3.3.2
-      fs-extra: 9.1.0
-      glob-parent: 6.0.2
-      graphql: 15.8.0
-      gray-matter: 4.0.3
-      isomorphic-git: 1.27.1
-      js-sha1: 0.6.0
-      js-yaml: 3.14.1
-      jsonpath-plus: 6.0.1
-      lodash: 4.17.21
-      many-level: 2.0.0
-      micromatch: 4.0.5
-      normalize-path: 3.0.0
-      readable-stream: 4.5.2
-      scmp: 2.1.0
-      yup: 0.32.11
+      '@tinacms/graphql': 1.5.2(react@18.3.1)(typescript@5.5.4)
     transitivePeerDependencies:
       - react
       - supports-color
@@ -7704,44 +7670,6 @@ snapshots:
       - react
       - supports-color
       - typescript
-
-  '@tinacms/mdx@1.3.28(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)':
-    dependencies:
-      '@tinacms/schema-tools': 1.4.19(react@18.3.1)(yup@0.32.11)
-      acorn: 8.8.2
-      ccount: 2.0.1
-      estree-util-is-identifier-name: 2.1.0
-      lodash-es: 4.17.21
-      mdast-util-compact: 4.1.1
-      mdast-util-directive: 2.2.4
-      mdast-util-from-markdown: 1.3.0
-      mdast-util-gfm: 2.0.2
-      mdast-util-mdx-jsx: 2.1.2
-      mdast-util-to-markdown: 1.5.0
-      micromark-extension-gfm: 2.0.3
-      micromark-factory-mdx-expression: 1.0.7
-      micromark-factory-space: 1.0.0
-      micromark-factory-whitespace: 1.0.0
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
-      parse-entities: 4.0.1
-      prettier: 2.8.8
-      remark: 14.0.2
-      remark-gfm: 2.0.0
-      remark-mdx: 2.3.0
-      stringify-entities: 4.0.3
-      typedoc: 0.26.5(typescript@5.5.4)
-      unist-util-source: 4.0.2
-      unist-util-stringify-position: 3.0.3
-      unist-util-visit: 4.1.2
-      uvu: 0.5.6
-      vfile-message: 3.1.4
-    transitivePeerDependencies:
-      - react
-      - supports-color
-      - typescript
-      - yup
 
   '@tinacms/mdx@1.4.2(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)':
     dependencies:
@@ -7826,12 +7754,12 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@tinacms/schema-tools@1.4.19(react@18.3.1)(yup@0.32.11)':
+  '@tinacms/schema-tools@1.4.19(react@18.3.1)(yup@1.4.0)':
     dependencies:
       picomatch-browser: 2.2.6
       react: 18.3.1
       url-pattern: 1.0.3
-      yup: 0.32.11
+      yup: 1.4.0
       zod: 3.23.8
 
   '@tinacms/schema-tools@1.6.2(react@18.3.1)(yup@0.32.11)':
@@ -9515,7 +9443,7 @@ snapshots:
       eslint: 9.7.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@9.7.0))(eslint@9.7.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@9.7.0))(eslint@9.7.0))(eslint@9.7.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@9.7.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@9.7.0)
       eslint-plugin-react: 7.35.0(eslint@9.7.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@9.7.0)
@@ -9539,7 +9467,7 @@ snapshots:
       enhanced-resolve: 5.17.1
       eslint: 9.7.0
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@9.7.0))(eslint@9.7.0))(eslint@9.7.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@9.7.0))(eslint@9.7.0))(eslint@9.7.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@9.7.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.6
       is-core-module: 2.15.0
@@ -9561,7 +9489,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@9.7.0))(eslint@9.7.0))(eslint@9.7.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@9.7.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@9.7.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
@@ -12287,9 +12215,9 @@ snapshots:
     dependencies:
       any-promise: 1.3.0
 
-  tinacms-authjs@3.0.0(next-auth@4.24.7(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tinacms@0.0.0-20240919005914(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(typescript@5.5.4))(yup@0.32.11):
+  tinacms-authjs@3.0.0(next-auth@4.24.7(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tinacms@0.0.0-20240919005914(@types/react-dom@18.3.0)(@types/react@18.3.3)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(typescript@5.5.4))(yup@1.4.0):
     dependencies:
-      '@tinacms/schema-tools': 1.4.19(react@18.3.1)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.19(react@18.3.1)(yup@1.4.0)
       next: 14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth: 4.24.7(next@14.0.3(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
@@ -12298,12 +12226,12 @@ snapshots:
     transitivePeerDependencies:
       - yup
 
-  tinacms-gitprovider-github@1.0.9(@tinacms/datalayer@1.2.38(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13):
+  tinacms-gitprovider-github@2.0.2(@tinacms/datalayer@1.3.2(react@18.3.1)(typescript@5.5.4))(encoding@0.1.13):
     dependencies:
       '@octokit/rest': 19.0.13(encoding@0.1.13)
-      '@tinacms/datalayer': 1.2.38(react@18.3.1)(typescript@5.5.4)
+      '@tinacms/datalayer': 1.3.2(react@18.3.1)(typescript@5.5.4)
       js-base64: 3.7.7
-      typescript: 4.6.4
+      typescript: 4.7.4
     transitivePeerDependencies:
       - encoding
 
@@ -12508,7 +12436,7 @@ snapshots:
       typescript: 5.5.4
       yaml: 2.4.5
 
-  typescript@4.6.4: {}
+  typescript@4.7.4: {}
 
   typescript@5.5.4: {}
 
