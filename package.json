@@ -10,27 +10,27 @@
     "lint": "next lint"
   },
   "devDependencies": {
-    "@types/node": "^20.16.15",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@tinacms/cli": "^1.7.0",
+    "@types/node": "^20.17.11",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.13.0",
-    "eslint-config-next": "^14.2.16",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14"
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.22",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "@tinacms/cli": "0.0.0-3a5a200-20241023064904",
-    "@tinacms/datalayer": "^1.3.6",
+    "@tinacms/datalayer": "^1.3.9",
     "next": "14.2.1",
-    "next-auth": "^4.24.8",
+    "next-auth": "^4.24.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tinacms": "0.0.0-3a5a200-20241023064904",
-    "tinacms-authjs": "^3.0.0",
-    "tinacms-gitprovider-github": "^1.0.11",
-    "typescript": "^5.6.3",
+    "tinacms": "^2.5.2",
+    "tinacms-authjs": "^8.0.2",
+    "tinacms-gitprovider-github": "^2.0.9",
+    "typescript": "^5.7.2",
     "upstash-redis-level": "^1.1.1"
   },
-  "packageManager": "pnpm@9.12.2"
+  "packageManager": "pnpm@9.15.2"
 }
